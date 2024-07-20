@@ -1,0 +1,39 @@
+header {
+  background: linear-gradient(to right, #011627, #FF3366);
+  padding: 20px 40px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(134, 30, 30, 0.3);
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+nav a:active {
+  background: rgba(255, 255, 255, 0.3);
+}

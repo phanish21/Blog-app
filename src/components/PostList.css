@@ -1,0 +1,131 @@
+body {
+  background: linear-gradient(to right, #7F055F, #9A48D0);
+}
+
+.posts-container {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.post h2 {
+  margin: 0 0 10px;
+  color: #333;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.post p {
+  flex-grow: 1;
+  color: #666;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+
+.post a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post button {
+  margin: 10px 5px 0 0;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.post button:first-child {
+  background: #007bff;
+}
+
+.post button:first-child:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.post button:last-child {
+  background: #ff4d4d;
+}
+
+.post button:last-child:hover {
+  background: #ff1a1a;
+  transform: scale(1.05);
+}
+
+.search-input {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.page-item {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.page-link {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+.page-link:hover {
+  background-color: #e9ecef;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  margin: 50px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
